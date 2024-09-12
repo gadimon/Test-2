@@ -90,6 +90,14 @@ function addSoldier(e) {
     renderSoldier()   
 }
 
-function timer(){}
+const remove = document.getElementById("missionButton")
+remove.addEventListener("click", deleteSoldier)
+
+function deleteSoldier()
+{
+    items.splice(id, 1)
+    saveSoldiers()
+    renderSoldier()
+}
 
 renderSoldier()
