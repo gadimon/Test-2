@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="headerDiv">
+            <h3>BATTALION FORCE MANAGEMENT</h3>
+        </div>
+    </header>
+    <main>
+        <div id="mainDiv">
+            <input type="text" class="input" id="inputName" placeholder="Full name">
+            <br>
+            <input type="text" class="input" id="inputRunk" placeholder="Rank">
+            <br>
+            <input type="text" class="input" id="inputPosition" placeholder="Position"> 
+            <br>
+            <input type="text" class="input" id="inputPlatoon" placeholder="Platoon">
+            <br>
+            <input type="text" class="input" id="inputMissionTime" placeholder="Mission time">
+            <br>
+            <select name="" id="select">
+                <option value="">Active</option>
+                <option value="">Reserve</option>
+                <option value="">Retired</option>
+            </select>
+            <br>
+            <input type="submit" id="inputSubmit" value="Add Personnel">
+        </div>
+        <h3 id="h3">FORCES OVERVIEW</h3>
+        <div>
+            <table border="1" id="table">
+                <thead id="thead">
+                <tr>
+                    <th>FULL NAME</th>
+                    <th>RANK</th>
+                    <th>POSITION</th>
+                    <th>PLATOON</th>
+                    <th>STATUS</th>
+                    <th>Mission time</th>
+                    <th>ACTIONS</th>
+                  </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div id="editPopup" class="popup"></div>>            
+            <div class="popup-content">
+                <h2>Edit Mission</h2>
+                <input type="text" id="editInput">
+                <div class="popup-buttons">
+                    <button id="saveEdit">Save</button>
+                    <button id="cancelEdit">cansel</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
